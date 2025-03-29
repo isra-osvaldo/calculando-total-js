@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-gamer.png" type="image/x-icon">
+    <title>Desafío 1 - JavaScript</title>
+</head>
+
+<body>
+    <h1>Total Connect Store</h1>
+    <main class="container-main">
+        <section class="container-card">
+            <div class="card">
+                <div class="img-card"></div>
+                  <h6 class="product">Laptop Gamer AMD</h6>
+                  <p class="base">Precio base: $<span class="precio-inicial"></span> </p>
+            
+                  <div class="count">
+                    <p>Cantidad:</p>
+                    <span class="cantidad">0</span>
+                        <div class="buttons">
+                            <button onclick="
+                            const cantidad = document.querySelector('.cantidad')
+                            cantidad.innerText = Number(cantidad.innerText) + 1
+                            
+                            const valorTotal = document.querySelector('.valor-total')
+                            valorTotal.innerHTML = precio * Number(cantidad.innerText)
+                            " 
+                            >+</button>
+                            <button onclick="   
+                                const cantidad = document.querySelector('.cantidad')
+                                cantidad.innerText = Number(cantidad.innerText) - 1
+    
+                                const valorTotal = document.querySelector('.valor-total')
+                                valorTotal.innerHTML = precio * Number(cantidad.innerText)
+                            "
+                            >-</button>
+                        </div>
+                  </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <div class="total-section">
+            <p>Total a pagar: $<span class="valor-total"></span></p>
+        </div>
+    </main>
+
+    <script src="./assets/js/index.js">
+      
+
+    </script>
+</body>
+</html>
