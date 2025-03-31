@@ -25,7 +25,7 @@
                         <div class="buttons">
                             <button onclick="
                             const cantidad = document.querySelector('.cantidad')
-                            cantidad.innerText = Number(cantidad.innerText) + 1
+                            cantidad.innerHTML = Number(cantidad.innerText) + 1
                             
                             const valorTotal = document.querySelector('.valor-total')
                             valorTotal.innerHTML = precio * Number(cantidad.innerText)
@@ -33,7 +33,7 @@
                             >+</button>
                             <button onclick="   
                                 const cantidad = document.querySelector('.cantidad')
-                                cantidad.innerText = Number(cantidad.innerText) - 1
+                                cantidad.innerHTML = Number(cantidad.innerText) - 1
     
                                 const valorTotal = document.querySelector('.valor-total')
                                 valorTotal.innerHTML = precio * Number(cantidad.innerText)
